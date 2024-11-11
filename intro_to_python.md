@@ -1,4 +1,4 @@
-# Beginner Phyton exercies
+# Beginner Phyton exercises
 
 ## Python print exercises
 
