@@ -1,6 +1,6 @@
-# beginner phyton exercices
+# Beginner Phyton exercies
 
-## Python Print Exercises
+## Python print exercises
 
 ### Exercise 1-a, printing text ("hello World")
 
@@ -86,7 +86,7 @@ print(ans_1)
 lst=[11, 100, 99, 1000, 999]
 lst.sort()
 
-###Exercise 11-b, sorting strings within a list in alphabetic order
+### Exercise 11-b, sorting strings within a list in alphabetic order
 
 lst=["Ukraine", "Japan", "Canada", "Kazakhstan", "Taiwan", "India", "Belize"]
 lst.sort()
@@ -114,7 +114,7 @@ a=lst.index("broccoli")
 item=lst.pop(a)
 print(lst, item)
 
-### alex cute Exercise 12-c, Using the Pop method to save an item of being removed
+### Exercise 12-c, Using the Pop method to save an item of being removed
 
 GDP_2018={"US": 21, "China": 16, "Japan": 5, "Germany": 4, "India": 3, "France": 3, "UK": 3, "Italy": 2}
 italy_gdp=GDP_2018.pop("Italy")
