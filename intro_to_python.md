@@ -2,7 +2,7 @@
 
 ## Python Print Exercises
 
-###Exercise 1-a, printing text ("hello World")
+### Exercise 1-a, printing text ("hello World")
 
 print("Hello World!")
 
@@ -18,7 +18,7 @@ print (my_text)
 glass_of_water=3
 print("I drank", glass_of_water, "glasses of water today.")
 
-###Exercise 2-b, assigning a new value to a variable
+### Exercise 2-b, assigning a new value to a variable
 
 glass_of_water=3
 glass_of_water=glass_of_water + 1
@@ -114,7 +114,7 @@ a=lst.index("broccoli")
 item=lst.pop(a)
 print(lst, item)
 
-###Exercise 12-c, Using the Pop method to save an item of being removed
+### alex cute Exercise 12-c, Using the Pop method to save an item of being removed
 
 GDP_2018={"US": 21, "China": 16, "Japan": 5, "Germany": 4, "India": 3, "France": 3, "UK": 3, "Italy": 2}
 italy_gdp=GDP_2018.pop("Italy")
@@ -124,3 +124,4 @@ print(italy_gdp, "trillion USD")
 
 
 ### Note: Use the scrip with Python 3.12.7
+
