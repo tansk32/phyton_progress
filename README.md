@@ -1,2 +1,2 @@
-# phyton_progress
-#file for documentation of tanjas phyton progress
+# python_homework
+Repository in honor to Tanjas python (not phyton) Homework
