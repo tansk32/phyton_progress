@@ -55,7 +55,7 @@ str="It's always darkest before dawn."
 ans_1= str[0]+str[1]+str[-1]
 print(ans_1)
 
-### Exercises 9-b, replacing characters
+### Exercises 9-c, replacing characters
 
 str="It's always darkest before dawn."
 str = str.replace(".", "!")
@@ -80,6 +80,8 @@ print(msg_length)
 dict={"Real Madrid": 13,"AC Milan": 7,"Bayern Munich":5 ,"Barcelona": 5, "Liverpool": 5}
 ans_1=len(dict)
 print(ans_1)
+
+## Python Sort Exercises
 
 ### Exercise 11-a, sorting lists in ascending order
 
