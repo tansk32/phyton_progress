@@ -1,6 +1,6 @@
-# beginner phyton exercices
+# Beginner Phyton exercises
 
-## Python Print Exercises
+## Python print exercises
 
 ### Exercise 1-a, printing text ("hello World")
 
@@ -49,13 +49,13 @@ print(global_mean_sea_level_2018)
 str="Its always darkest before dawn."
 print(str)
 
-###Exercise 9-b, creating new strings, by using frist, second, and last characters
+### Exercise 9-b, creating new strings, by using frist, second, and last characters
 
 str="It's always darkest before dawn."
 ans_1= str[0]+str[1]+str[-1]
 print(ans_1)
 
-###Exercises 9-b, replacing characters
+### Exercises 9-c, replacing characters
 
 str="It's always darkest before dawn."
 str = str.replace(".", "!")
@@ -75,30 +75,32 @@ msg="Be yourself, everyone else is taken."
 msg_length=len(msg)
 print(msg_length)
 
-###Exercise 10-c, using the len() for dictionaries
+### Exercise 10-c, using the len() for dictionaries
 
 dict={"Real Madrid": 13,"AC Milan": 7,"Bayern Munich":5 ,"Barcelona": 5, "Liverpool": 5}
 ans_1=len(dict)
 print(ans_1)
 
-###Exercise 11-a, sorting lists in ascending order
+## Python Sort Exercises
+
+### Exercise 11-a, sorting lists in ascending order
 
 lst=[11, 100, 99, 1000, 999]
 lst.sort()
 
-###Exercise 11-b, sorting strings within a list in alphabetic order
+### Exercise 11-b, sorting strings within a list in alphabetic order
 
 lst=["Ukraine", "Japan", "Canada", "Kazakhstan", "Taiwan", "India", "Belize"]
 lst.sort()
 print(lst)
  
-###Exercise 11-c, sorting lists in descending order
+### Exercise 11-c, sorting lists in descending order
 
 lst=[11, 100, 101, 999, 1001]
 *lst.sort(reverse=True)*
 print(lst)
 
-##Python Pop Exercises
+## Python Pop Exercises
 
 ### Exercise 12-a, to pop the last item of a list
 
@@ -114,7 +116,7 @@ a=lst.index("broccoli")
 item=lst.pop(a)
 print(lst, item)
 
-### alex cute Exercise 12-c, Using the Pop method to save an item of being removed
+### Exercise 12-c, Using the Pop method to save an item of being removed
 
 GDP_2018={"US": 21, "China": 16, "Japan": 5, "Germany": 4, "India": 3, "France": 3, "UK": 3, "Italy": 2}
 italy_gdp=GDP_2018.pop("Italy")
