@@ -15,4 +15,4 @@ for x in DNA:
 complementary_dna = ""
 for base in DNA:
 	complementary_dna += complement(base)
-print(complementary_dna[::-1])
+print(complementary_dna[::-1]) #(reverse complement)
