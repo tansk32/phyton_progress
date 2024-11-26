@@ -1,4 +1,4 @@
-#SUBS
+#SUBS.py
 s = "GATATATGCATATACTT"
 t = "ATAT"
 

@@ -1,4 +1,4 @@
-#HAMM
+#HAMM.py
 #go over both strings simulaneously, compare them,
 #if diffrent add to counter
 s = "GAGCCTACTAACGGGAT"
