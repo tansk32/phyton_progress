@@ -6,6 +6,6 @@
 #and s[d] in our slice.
 
 s = "6inaAAyF8bNbSTN8SOQu2WkKBpmChrysopeleaHXB11KmZa2KaQn0ltX9YobFaODDuSTxiuVOOSVj8ii1lncRacggkalpinusHiNqfnkf7PFyjLi7kh7GhbCr5yIEUElp1sarwfLWlrLl9tI3TOaN1HxwogPCoDPBSfmC5R7bfqyz2."
-print(s[27:37+1] + s[90:36+1])
+print(s[27:37+1] + " " + s[90:36+1])
 
 #Output: Chrysopelea
