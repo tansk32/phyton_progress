@@ -17,8 +17,8 @@ code = {
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G"
 }
 
-fasta = ">Rosalind_99
-AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
+# dna = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
+dna="AACTTT"
 
 #for line in fasta:
 def parse_fasta(fasta):
@@ -26,51 +26,66 @@ def parse_fasta(fasta):
     s = "".join(lines[1:])
     return s
 
-
-s = "CATGCCCTGAT"
-s = s.replace("T", "U") #ooder for x in s, if xx == "T", print "U", elif x!=T print 
+rna_forward = dna.replace("T", "U") #ooder for x in s, if xx == "T", print "U", elif x!=T print 
 #Replace T with U
 
 #template strand übersetzen in coding strand
+def complement(x):
+    if x == "A":
+        return "T"
+    elif x == "C":
+        return "G"
+    elif x == "G":
+        return "C"
+    elif x == "T":
+        return "A"
 
-for x in s:
-    def complement(x):
-	    if x == "A":
-		    return "U"
-		elif x == "C":
-		    return "G"
-		elif x == "G":
-			return "C"
-		elif x == "U":
-			return "A"
+def aug_finder(test):
+    s = test #eig rna, for both
+    t = "AUG"
+    locations = []
+    for i in range(len(s) - len(t) +1):
+        if s[i:i+len(t)] == t:
+            locations.append(i)
+    return locations
 
-t = ""
-for base in s:
-	t += complement(base)
-print(t[::-1]) #(reverse complement)
 
-# ooder complement = {"A": "T", "T": "A", "C": "G", "G": "C"}
+rna_backward = "" 
+for base in dna:
+	rna_backward += complement(base)
+rna_backward = rna_backward[::-1] #(reverse complement)
 
-t = "AUCAGGGCAUG"
-s = "CAUGCCCUGAU"
+rna_backward = rna_backward.replace("T", "U")
 
-#translate to protein
-peptide = ""
-for start in range(0, len(t), 3):
-    codon = t[start:start+3]
-    aminoacid = code[codon]
-    if aminoacid == "Stop":
-        break
-    peptide += aminoacid
-return aminoacid
-# go over s and t, 
-#start at readingfram [0], [1], [2]
+test = "UUAUGCCCAUG"
+positions = aug_finder(test)
+print(positions)
 
-def orfs(s, t)
-for frame in range(3):
-    for start in range(frame, len(dna) -2, 3):
-        codon = dna[start.]
+#print everything from AUG to stop(UAA, UAG, UGA)
 
+u = "UAA"
+v = "UAG"
+w = "UGA"
+for orfs in range(positions, len(test)):
+        print(orfs)
+        if rna[orfs:orfs+3] == u or v or w:
+             break
+
+    
+
+
+
+# #translate to protein
+# peptide = ""
+# for start in range(0, len(t), 3):
+#     codon = t[start:start+3]
+#     aminoacid = code[codon]
+#     if aminoacid == "Stop":
+#         break
+#     peptide += aminoacid
+# return aminoacid
+# # go over s and t, 
+# #start at readingfram [0], [1], [2]
 
 
 
