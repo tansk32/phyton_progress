@@ -10,3 +10,7 @@ def rabbits(n, k ):
 
 result = rabbits(3, 3)
 result
+
+
+for s in seqs:
+    print(s[0])

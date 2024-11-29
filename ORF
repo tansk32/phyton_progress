@@ -43,11 +43,11 @@ def complement(x):
 def aug_finder(test):
     s = test #eig rna, for both
     t = "AUG"
-    locations = []
+    startlocations = []
     for i in range(len(s) - len(t) +1):
         if s[i:i+len(t)] == t:
-            locations.append(i)
-    return locations
+            startlocations.append(i)
+    return startlocations
 
 
 rna_backward = "" 
@@ -63,15 +63,22 @@ print(positions)
 
 #print everything from AUG to stop(UAA, UAG, UGA)
 
-u = "UAA"
-v = "UAG"
-w = "UGA"
-for orfs in range(positions, len(test)):
-        print(orfs)
-        if rna[orfs:orfs+3] == u or v or w:
-             break
+
+orf = ""
+for frame in range(3): #covers reading frame
+   for start in startlocations:
+    protein = ""
+    codon = rna[start:start+3]
+    aminoacid = code[codon]
+    orf += aminoacid
+    if aminoacid == "Stop":
+        break
+    
+
 
     
+    
+ 
 
 
 
